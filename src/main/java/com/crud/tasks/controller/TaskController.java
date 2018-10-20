@@ -18,13 +18,13 @@ public class TaskController {
         return new ArrayList<>();
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "getTask/{taskId}")
-    public TaskDto getTask(@PathVariable(value="taskId")Long taskId){
+    @RequestMapping(method = RequestMethod.GET, value = "getTask")
+    public TaskDto getTask(Long taskId){
         return new TaskDto(1L,"test tile","test content");
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, value = "deleteTask/{taskId}")
-    public void deleteTask(@PathVariable(value="taskId") Long taskId){
+    @RequestMapping(method = RequestMethod.DELETE, value = "deleteTask")
+    public void deleteTask(Long taskId){
 
     }
 
